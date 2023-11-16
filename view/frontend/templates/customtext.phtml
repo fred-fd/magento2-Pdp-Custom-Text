@@ -1,0 +1,15 @@
+<?php
+/**
+ * \Freddev\PdpCustomText\Block\Index\Index
+ */
+if ($block->isModuleEnable() && !empty($block->getCustomText())):
+?>
+<div>
+    <div>
+        <?= __('Custom Text'); ?>:
+    </div>
+    <div>
+        <?= $block->getCustomText(); ?>
+    </div>
+</div>
+<? endif; ?>
